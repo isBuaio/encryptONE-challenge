@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <title>encryptONE</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/logo.png" alt="logo de alura" >
+    </header>
+    <main>
+        <div class="container">
+        <section class="write">
+            <textarea class="text-area" cols="25" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="btnEnc" onclick="btnEnc()" >Encriptar</button>
+                <button class="btnDes" onclick="btnDes()">Desencriptar</button>
+            </div>
+        </section>
+
+    </div>
+
+        <div class="container">
+            <section class="answer">
+              <textarea class="msg" cols="20" rows="10"></textarea>
+              <div class="botones">
+                <button class="btnCopy" onclick="copiar()" >Copiar</button>
+              </div>
+            </section>
+        </div>
+          
+    </main>
+<footer>
+
+    <p>Creado por <a href="github.com/isBuaio" target="_blank">Carlos Triminio</a></p>
+    <p>Alura - Challenge  html, css y Javascript</p>
+    <p>Todos los derechos reservados</p>
+
+
+</footer>
+
+    
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
