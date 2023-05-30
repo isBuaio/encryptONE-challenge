@@ -68,5 +68,10 @@ function desencriptar(_stringdesencriptado) {
     }
     return _stringdesencriptado;
   }
-
+  function pulsar(e) {
+    if (e.keyCode === 13 && !e.shiftKey) {
+        e.preventDefault();
+        var boton = document.getElementById("boton");
+        angular.element(boton).triggerHandler('click');
+    }}
   

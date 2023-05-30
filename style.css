@@ -1,74 +1,84 @@
-*{
-    background:#F3F5FC;
+
+.container {
+    width:996px;
+    margin:0px auto;
     font-family: 'Inter';
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
-    overflow-y: hidden;
-    
 }
+
+.header {
+
+overflow:hidden;
+clear:both;
+margin-top:0 auto;
+padding:10px;
+overflow:hidden;
+text-align:center;}
 
 .logo{
     padding-top: 10px;
-    margin-left: 10px;
+    margin-left: 35px;
     width: 10%;
 }
 
-main{
-    display: flex;
-    margin-bottom: 10px;
-    margin-left: 10px;
-  
+.write, .answer {
+    padding: 5px;
     
-}
+    -moz-border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px;border-radius:5px;
+    
 
-.text-area {
-    height: 400px;
-    border: none;
-    color: #0A3871;
-    margin-top: 30px;
-    padding: 2px;
-    
+
 }
-::placeholder { color: #0A3871; }
-  .text-area:focus {
-      outline: none;
+.write {
+    float: left;
+    width: 70%;
+
+.text-area{
+        height: 350px;
+        border: none;
+        color: #0A3871;
+        margin-top: 30px;
+        padding: 2px;
+        width: 99%;
+        font-size:3em;
     }
+    ::placeholder { color: #0A3871; }
+      .text-area:focus {
+          outline: none;
+        }
 
+
+}
+.answer {
+    float: right;
+    width: 25%;
+
+}
 .msg{
-    height: 630px;
+
+    height: 436px;
     background: white;
     background-image: url("img/Muñeco.png");
     background-repeat: no-repeat;
     background-position: center;
-    border: none;
-    border-radius: 24px;
-    color: #0A3871;
-    margin-left: 98px;
-    margin-top: 20px;
-    padding-left: 20px;
-    position: fixed;
+        border: none;
+        color: #0A3871;
+        margin-top: 30px;
+        padding: 2px;
+        width: 99%;
+        font-size: 1.1em;
+        font-family: 'Press Start 2P'
+        
+
+
 }
 .msg:focus {
     outline: none;
 }
 
-
-
 .botones{
     display: flex;
     margin-top: 18px;
-}
-
-.btnDes {
-    background: #D8DFE8;
-    border: 1px solid #0A3871;
-    border-radius: 24px;
-    color: #0A3871;
-    cursor: pointer;
-    height: 67px;
-    margin-left: 30px;
-    width: 328px;
+    
 }
 
 .btnEnc {
@@ -78,34 +88,86 @@ main{
     color: white;
     cursor: pointer;
     height: 67px;
-    width: 328px;
+    width: 50%;
+    font-size:25px;
 }
-
-.btnCopy {
+.btnDes {
+    background: #D8DFE8;
     border: 1px solid #0A3871;
     border-radius: 24px;
     color: #0A3871;
     cursor: pointer;
     height: 67px;
-    margin-left: 120px;
-    margin-top: 495px;
-    position: absolute;
-    width: 336px;
+    margin-left: 30px;
+    width: 50%;
+    font-size:25px;
+}
+
+
+
+.btnCopy {
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    width: 100%;
+    font-size:25px;
 }
 
 .informacion {
     color: #495057;
     font-size:18px;
 }
-footer{
-    color: #495057;
-    font-size:18px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 80px;
-    background: #F3F5FC;
-    border-top: 1px solid #E9ECEF;
-    text-align: center;
+
+
+footer {
+    margin-top: 10px;
+    margin:10px;
+    padding-top: 10px;
+    text-align:center;
+    clear:both;
 }
 
+/* para 980px o menos */
+@media screen and (max-width:980px) {
+    .container {
+        width:98%;
+        font-size:1.1em;
+    }
+    .write {
+        width:68%;
+    }
+}
+
+/* para 700px o menos */
+@media screen and (max-width:700px) {
+    .answer,.write {
+        float:none;
+        width:96%;
+    }
+    .write {
+        font-size:1.2em;
+    }
+    .answer {
+        margin-top:5px;
+    }
+    
+}
+
+/* para 480px o menos */
+@media screen and (max-width:480px) {
+    
+    .write{
+        font-size:0.6em;
+        
+    }
+    .informacion {
+        font-size:14px;
+    }
+    .write {
+        width:94%;
+    }
+    
+}
